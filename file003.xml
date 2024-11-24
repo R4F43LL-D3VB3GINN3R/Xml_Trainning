@@ -1,0 +1,300 @@
+<mvc:View controllerName="sbx.controller.index" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m" xmlns:f="sap.ui.layout.form">
+    <Page id="page" title="Cockpit Sales" titleAlignment="Center">
+      <content>
+        <HBox backgroundDesign="Transparent" width="100%" height="100%" alignContent="Center" alignItems="Center" direction="Column" >
+            <VBox backgroundDesign="Solid" width="50%" alignItems="Center" class="sapUiSmallMarginTop">
+              <Label text="Data Pedido *" class="sapUiSmallMarginTop" />
+              <VBox direction="Row" alignContent="End" alignItems="End" >
+                <Input type="Date"/>    
+                <Label text="Até" class="sapUiSmallMarginBegin sapUiSmallMarginEnd"/>
+                <Input type="Date"/>
+              </VBox >  
+              <Label text="Tipo *" class="sapUiSmallMarginTop"/>
+              <ComboBox />
+              <Label text="Número *" class="sapUiSmallMarginTop"/>
+              <Input type="Number"/>  
+              <Button text="Pesquisar" type="Emphasized" width="100%" class="sapUiSmallMarginTop sapUiSmallMarginBottom"/>
+            </VBox>
+            <VBox backgroundDesign="Solid" width="100%" direction="Column" class="sapUiSmallMarginTop" alignItems="Center">
+              <VBox direction="Row" alignItems="Center" alignContent="Center" width="100%" justifyContent="Center" class="sapUiSmallMarginTop">
+                  <Button text="Liberar" width="100px" class="sapUiSmallMarginBegin sapUiSmallMarginEnd" iconFirst="true" icon="sap-icon://accept"/>
+                  <Button text="Alterar" width="100px" class="sapUiSmallMarginBegin sapUiSmallMarginEnd" icon="sap-icon://add"/>
+                  <Button text="Remover" width="100px" class="sapUiSmallMarginBegin sapUiSmallMarginEnd" icon="sap-icon://decline"/>
+                  <Button text="Email" width="100px" class="sapUiSmallMarginBegin sapUiSmallMarginEnd" icon="sap-icon://email"/>
+              </VBox>
+              <Table id="myTable" width="100%" inset="false">
+                <headerToolbar>
+                  <Toolbar >
+                    <Title text="Sales Orders" />
+                  </Toolbar>
+                </headerToolbar>
+                <columns>
+                  <Column >
+                    <Text text="Nº Pedido" />
+                  </Column>
+                  <Column>
+                    <Text text="Nº Item" />
+                  </Column>
+                  <Column>
+                    <Text text="Nº Material" />
+                  </Column>
+                  <Column>
+                    <Text text="Desc. Material" />
+                  </Column>
+                  <Column>
+                    <Text text="Quantidade" />
+                  </Column>
+                  <Column>
+                    <Text text="Unidade Med." />
+                  </Column>
+                  <Column>
+                    <Text text="Valor Unit." />
+                  </Column>
+                  <Column>
+                    <Text text="Centro." />
+                  </Column>
+                  <Column>
+                    <Text text="Depósito." />
+                  </Column>
+                  <Column>
+                    <Text text="Org. Compras" />
+                  </Column>
+                  <Column>
+                    <Text text="Grp. Compras" />
+                  </Column>
+                  <Column>
+                    <Text text="Empresa" />
+                  </Column>
+                </columns>
+                <items>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                  <ColumnListItem>
+                    <cells>
+                      <Text text="Dado 1" />
+                      <Text text="Dado 2" />
+                      <Text text="Dado 3" />
+                      <Text text="Dado 4" />
+                      <Text text="Dado 5" />
+                      <Text text="Dado 6" />
+                      <Text text="Dado 8" />
+                      <Text text="Dado 9" />
+                      <Text text="Dado 10" />
+                      <Text text="Dado 11" />
+                      <Text text="Dado 12" />
+                      <Text text="Dado 13" />
+                    </cells>
+                  </ColumnListItem>
+                </items>
+              </Table>
+            </VBox>
+        </HBox>
+      </content>
+    </Page>
+</mvc:View>
