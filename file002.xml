@@ -9,8 +9,32 @@
           <content>
               <HBox fitContainer="true">
                   <VBox id="idVBox1"
-                        width="50%">
-                      <Title text="form" />  
+                        width="50%"
+                        alignItems="Center"
+                        justifyContent="Center">
+                        <VBox >
+                          <Title text="Welcome Back" titleStyle="H1" class="sapUiLargeMarginBottom"/>  
+                          <f:SimpleForm backgroundDesign="Transparent">
+                            <f:content>
+                              <Label text="User"/>
+                              <Input />
+                              <Label text="Password"/>
+                              <Input type="Password" showValueHelp="true" valueHelpIconSrc="sap-icon://show" />
+                            </f:content>
+                          </f:SimpleForm>
+                          <HBox justifyContent="SpaceBetween" alignItems="Center">
+                              <HBox alignItems="Center">
+                                <CheckBox />
+                                <Label text="Keep Me Logged In"/>
+                              </HBox>
+                              <Link text="Forgot your password?" href="/"/>
+                          </HBox>
+                          <Button text="Login" type="Emphasized" width="100%"/>
+                          <HBox justifyContent="Center" alignItems="Center" class="sapUiLargeMarginTop">
+                              <Text text="Don't have an Account?" />
+                              <Link text="Sign Up" href="/"/>
+                          </HBox>
+                    </VBox>
                   </VBox>
                   <VBox id="idVBox2"
                         width="50%"
