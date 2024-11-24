@@ -1,0 +1,18 @@
+<mvc:View controllerName="sbx.controller.index" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
+    <Page id="pageread" title="Cockpit Sales" titleAlignment="Center"> 
+        <Panel id="panel1" width="100%">                                                                                                          <!-- Tag da Página -->
+            <VBox id="vbox1" alignContent="Center" width="100%" justifyContent="Center" alignItems="Center" direction="Column" height="150px">    <!-- Elemento VBox -->
+                <HBox  id="hbox1" alignItems="Center" alignContent="Center" >                                                                                           <!-- Elemento HBox -->
+                  <Label id="label1" text="Data Pedido" showColon="true" width="90px" ></Label>
+                  <Input id="input1" width="75px" placeholder="__/__/__"  />
+                   <ToolbarSpacer id="spacer1" width="9px" ></ToolbarSpacer>
+                  <Label id="label2" text="Até" showColon="true" width="30px"></Label>
+                  <Input id="input2" width="75px" placeholder="__/__/__"/>
+                </HBox>
+                <HBox id="hbox2">
+                 
+                </HBox>
+            </VBox>
+        </Panel>
+      </Page>
+</mvc:View>
