@@ -1,0 +1,36 @@
+<mvc:View controllerName="sbx.controller.index" 
+          xmlns:mvc="sap.ui.core.mvc" 
+          displayBlock="true" 
+          xmlns="sap.m"
+          xmlns:c="sap.ui.core"
+          xmlns:f="sap.ui.layout.form">
+    <Page id="page"
+          showHeader="false">
+          <content>
+              <HBox fitContainer="true">
+                  <VBox id="idVBox1"
+                        width="50%">
+                      <Title text="form" />  
+                  </VBox>
+                  <VBox id="idVBox2"
+                        width="50%"
+                        backgroundDesign="Solid"
+                        alignItems="End">
+                        <HBox alignItems="Center"
+                              class="sapUiLargeMarginTop sapUiLargeMarginEnd">
+                          <Avatar src="sap-icon://course-book"
+                                  displayShape="Square" 
+                                  class="sapUiSmallMarginEnd" />
+                          <Title text="Welcome to My Login Page" 
+                                 titleStyle="H2" />
+                        </HBox>
+                        <Title text="Created With SAPUI5" 
+                               titleStyle="H5"
+                               class="sapUiLargeMarginEnd"/>
+                        <Button text="About" 
+                                class="sapUiLargeMarginEnd"/>
+                  </VBox>
+              </HBox>
+          </content>
+    </Page>
+</mvc:View>
