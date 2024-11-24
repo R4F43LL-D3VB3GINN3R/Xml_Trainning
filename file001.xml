@@ -1,16 +1,23 @@
 <mvc:View controllerName="sbx.controller.index" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
     <Page id="pageread" title="Cockpit Sales" titleAlignment="Center"> 
-        <Panel id="panel1" width="100%">                                                                                                          <!-- Tag da Página -->
-            <VBox id="vbox1" alignContent="Center" width="100%" justifyContent="Center" alignItems="Center" direction="Column" height="150px">    <!-- Elemento VBox -->
-                <HBox  id="hbox1" alignItems="Center" alignContent="Center" >                                                                                           <!-- Elemento HBox -->
+        <Panel id="panel1" width="100%">                                                                                                         
+            <VBox id="vbox1" alignContent="Center" width="100%" justifyContent="Center" alignItems="Center" direction="Column" height="150px">    
+                <HBox  id="hbox1" alignItems="Center" alignContent="Center" width="100%">                                                                                           
                   <Label id="label1" text="Data Pedido" showColon="true" width="90px" ></Label>
-                  <Input id="input1" width="75px" placeholder="__/__/__"  />
+                  <Input id="input1" width="75px" placeholder="__/__/__" />
                    <ToolbarSpacer id="spacer1" width="9px" ></ToolbarSpacer>
                   <Label id="label2" text="Até" showColon="true" width="30px"></Label>
                   <Input id="input2" width="75px" placeholder="__/__/__"/>
                 </HBox>
-                <HBox id="hbox2">
-                 
+                <HBox id="hbox2" alignItems="Center" alignContent="Center" width="100%">
+                  <Label id="label3" text="Tipo" showColon="true" width="40px"></Label>
+                  <ToolbarSpacer id="spacer2" width="50px"></ToolbarSpacer>
+                  <Input id="input3" width="100px"></Input>
+                </HBox>
+                <HBox id="hbox3" alignContent="Center" alignItems="Center" width="100%">
+                  <Label id="label4" text="Número" showColon="true"></Label>
+                  <ToolbarSpacer id="spacer3" width="38px"></ToolbarSpacer>
+                  <Input id="input4" width="50px"></Input>
                 </HBox>
             </VBox>
         </Panel>
